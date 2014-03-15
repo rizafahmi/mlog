@@ -1,0 +1,13 @@
+<template name="postSubmit">
+  <form class="main" role="form">
+    <div class="form-group">
+      {{ text_field 'title' label='Title' }}
+    </div>
+    <div class="form-group">
+      {{ text_area 'content' label='Content' }}
+    </div>
+    <div class="form-group">
+      {{ submit_button 'Save' class='btn-warning' }}
+    </div>
+  </form>
+</template>

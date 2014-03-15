@@ -4,7 +4,8 @@
     "basePackages": {
       "bootstrap-3": {},
       "iron-router": {},
-      "spin": {}
+      "spin": {},
+      "simple-form": {}
     },
     "packages": {
       "bootstrap-3": {
@@ -21,6 +22,11 @@
         "git": "https://github.com/SachaG/meteor-spin.git",
         "tag": "v0.2.2",
         "commit": "3f655f0016228e4195acc784c45d3e3a247dc39f"
+      },
+      "simple-form": {
+        "git": "https://github.com/BeDifferential/simple-form.git",
+        "tag": "v0.0.20",
+        "commit": "fdba8e6604bfd71668304561a4fe6db3295bd1e9"
       }
     }
   }
