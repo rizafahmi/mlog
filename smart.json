@@ -3,6 +3,7 @@
     "bootstrap-3": {},
     "iron-router": {},
     "spin": {},
-    "simple-form": {}
+    "simple-form": {},
+    "accounts-ui-bootstrap-3": {}
   }
 }
