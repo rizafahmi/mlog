@@ -1,0 +1,78 @@
+<template name="layout">
+    <!-- Static navbar -->
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{{pathFor 'postsList'}}">MeteorDose</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div><!--/ Static navbar -->
+
+    <div id="grey">
+      <div class="container">
+        <div id="main" class="row-fluid">
+          {{yield}}
+        </div>
+      </div>
+    </div>
+    <!-- +++++ Footer Section +++++ -->
+  
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <!-- Form newsletter -->
+          <h4>Newsletter</h4>
+          <p>
+            Subscribe Your Email To Receive Weekly Update<br />
+            <input type="text" name="email">
+            <button class="btn btn-warning btn-sm" type="submit">Subscribe</button>
+          </p>
+
+          <!--/ Form newsletter -->
+        </div>
+        <div class="col-lg-4">
+          <h4>About MeteorDose</h4>
+          <p>
+            <a href="#">MeteorDose</a> is a journal of the overlooked tiny bits in
+            new web framework that blows my mind! Will update weekly, as a way
+            to build the habit of writing something on a regular basis.
+            Authored by <a href="https://www.twitter.com/rizafahmi22" target="_blank">Riza Fahmi</a>.
+          </p>
+          <p>This blog proudly powered by <a href="http://www.meteor.com/" target="_blank">Meteor</a>. 
+          And using template called <a href="http://www.blacktie.co" target="_blank">Stanley</a>.
+        </div><!-- /col-lg-4 -->
+
+        <div class="col-lg-4">
+          <h4>Socials</h4>
+          <p>
+            <a href="#">RSS</a><br/>
+            <a href="#">Twitter</a><br/>
+            <a href="#">Google+</a><br />
+            <a href="#">Gittip</a>
+          </p>
+        </div><!-- /col-lg-4 -->
+
+        <div class="col-lg-4">
+          <h4>The Dose Network</h4>
+          <p>
+            <a href="http://www.elixirdose.com/">ElixirDose</a><br />
+            <a href="#">MeteorDose</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</template>
