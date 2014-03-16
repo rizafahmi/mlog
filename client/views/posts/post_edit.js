@@ -18,5 +18,14 @@ Template.postEdit.events({
         Router.go('postPage', {_id: currentPostId});
       }
     });
+  },
+  'click .delete': function(e){
+    e.preventDefault();
+    
+    if(confirm("Delete this article?")){
+      var currentPostId = this._id;
+      Posts.remove(currentPostId);
+      Router.go('postsList');
+    }
   }
 });
