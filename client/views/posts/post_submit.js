@@ -2,8 +2,11 @@ Template.postSubmit.events({
   'submit form': function(e){
     e.preventDefault();
 
+    var title = $(e.target).find('[name=title]').val();
+    title = title.replace(new RegExp(/'/g), "\\'");
+
     var post = {
-      title: $(e.target).find('[name=title]').val(),
+      title: title,
       content: $(e.target).find('[name=content]').val(),
       datePublish: new Date()
     }

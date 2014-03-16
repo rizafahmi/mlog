@@ -1,0 +1,15 @@
+<template name="postEdit">
+<h3>Edit</h3>
+  <form class="main" action="" role="form">
+    <div class="form-group">
+      {{text_field 'title' label='Title'}}
+    </div>
+    <div class="form-group">
+      {{text_area 'content' label='Content'}}
+    </div>
+    <div class="form-group">
+      {{submit_button 'Save' class='btn btn-md btn-warning update'}}
+      <a class="btn btn-md btn-danger delete" href="#">Delete</a>
+    </div>
+  </form>
+</template>
