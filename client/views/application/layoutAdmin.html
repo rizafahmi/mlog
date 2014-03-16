@@ -1,4 +1,4 @@
-<template name="layout">
+<template name="layoutAdmin">
     <!-- Static navbar -->
     <div class="navbar navbar-inverse navbar-static-top">
       <div class="container">
@@ -8,10 +8,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="{{pathFor 'postsList'}}">MeteorDose</a>
+          <a class="navbar-brand" href="{{pathFor 'postsList'}}">MeteorDose Admin</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
+            {{loginButtons align='right'}}
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>

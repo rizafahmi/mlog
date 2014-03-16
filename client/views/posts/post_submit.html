@@ -1,5 +1,6 @@
 <template name="postSubmit">
-  <form class="main" role="form">
+  {{#if currentUser}}
+  <form class="main col-md-6" role="form">
     <div class="form-group">
       {{ text_field 'title' label='Title' }}
     </div>
@@ -10,4 +11,7 @@
       {{ submit_button 'Save' class='btn-warning' }}
     </div>
   </form>
+  {{else}}
+    <p>You need to login as admin to access this page.</p>
+  {{/if}}
 </template>

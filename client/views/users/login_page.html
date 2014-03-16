@@ -1,0 +1,16 @@
+<template name="loginPage">
+  <form id="login-form" class="col-md-6">
+    <div class="form-group">
+      {{ text_field 'email' label='Email' }}
+    </div>
+    <div class="form-group">
+      {{ text_field 'password' label='Password' type='password' }}
+    </div>
+    <div class="form-group">
+      {{ submit_button 'Login' class='btn btn-warning btn-md' }}
+      {{#if adminNotCreated}}
+      <a href="{{pathFor 'registerPage'}}" class="btn btn-md btn-primary">Register</a>
+      {{/if}}
+    </div>
+  </form>
+</template>
