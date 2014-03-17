@@ -2,9 +2,11 @@
   <p><bd>{{datePublish}}</bd></p>
   <h3><a href="{{pathFor 'postPage'}}">{{title}}</a>&nbsp; </h3>
   <p>{{{content}}}</p>
-  <p>Comments: <a href="{{pathFor 'postPage'}}">{{commentsCount}}</a></p>
+  {{#if commentsCount}}
+    <p><a href="{{pathFor 'postPage'}}">{{commentsCount}} comment(s).</a></p>
+  {{/if}}
   <p><a href="{{pathFor 'postPage'}}">Continue Reading...</a>&nbsp;
-  
+
   {{#if currentUser}}
   <a href="{{pathFor 'postEdit'}}" class="edit btn btn-sm btn-warning">Edit</a>
   {{/if}}
