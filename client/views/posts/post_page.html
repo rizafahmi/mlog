@@ -1,3 +1,10 @@
 <template name="postPage">
   {{> postDetail}}
+
+  <h4>Comments</h4>
+  <ul class="comments">
+    {{#each comments}}
+      {{> comment}}
+    {{/each}}
+  </ul>
 </template>
