@@ -8,7 +8,8 @@ Template.postSubmit.events({
     var post = {
       title: title,
       content: $(e.target).find('[name=content]').val(),
-      datePublish: new Date()
+      datePublish: new Date(),
+      commentsCount: 0
     }
 
     post._id = Posts.insert(post);

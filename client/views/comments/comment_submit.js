@@ -9,6 +9,8 @@ Template.commentSubmit.events({
       name: $(e.target).find('[name=name]').val()
     });
 
+    Posts.update(this._id, {$inc: {commentsCount: 1}});
+
     $(e.target).find('[name=text]').val('');
     $(e.target).find('[name=name]').val('');
 
