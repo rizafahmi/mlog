@@ -1,0 +1,16 @@
+<template name="commentSubmit">
+  <div class="row">
+    <form class="comment-form col-md-6" action="" name="comment">
+      <div class="form-group">
+        {{ text_field 'name' label='Your Name' }}
+      </div>
+      <div class="form-group">
+        {{ text_area 'text' label='Your Comment' }}
+      </div>
+      <div class="form-group">
+        {{ submit_button 'Save Comment' class='btn btn-warning' }}
+      </div>
+    </form>
+  </div>
+
+</template>

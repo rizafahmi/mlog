@@ -2,9 +2,10 @@
   {{> postDetail}}
 
   <h4>Comments</h4>
+  {{> commentSubmit}}
   <ul class="comments list-unstyled">
     {{#each comments}}
-      {{> comment}}
+    {{> comment}}
     {{/each}}
   </ul>
 </template>
