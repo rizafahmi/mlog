@@ -1,7 +1,7 @@
 <template name="postItem">
   <p><bd>{{datePublish}}</bd></p>
   <h3><a href="{{pathFor 'postPage'}}">{{title}}</a>&nbsp; </h3>
-  <p>{{{content}}}</p>
+  <p>{{#markdown}}{{{content}}}{{/markdown}}</p>
   {{#if commentsCount}}
   <p><a href="{{pathFor 'postPage'}}"><span class="label label-default">{{commentsCount}}</span> comment(s).</a></p>
   {{/if}}
