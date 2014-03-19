@@ -29,4 +29,13 @@ if( Posts.find().count() === 0) {
     datePublish: new Date(),
     commentsCount: 0
   });
+
+  for (var i = 0; i < 10; i++){
+    Posts.insert({
+      title: 'Test post #' + i,
+      content: 'This is test post #' + i,
+      dateSubmit: now - i * 3600 * 1000,
+      commentsCount: 0
+    });
+  }
 }
