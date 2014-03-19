@@ -7,7 +7,8 @@
       "spin": {},
       "simple-form": {},
       "accounts-ui-bootstrap-3": {},
-      "iron-router-progress": {}
+      "iron-router-progress": {},
+      "marked": {}
     },
     "packages": {
       "bootstrap-3": {
@@ -39,6 +40,11 @@
         "git": "https://github.com/Multiply/iron-router-progress.git",
         "tag": "v0.2.0",
         "commit": "ce730d1d26feadb7c75ea25f22c5bfdb0c549a8b"
+      },
+      "marked": {
+        "git": "https://github.com/chuangbo/meteor-marked.git",
+        "tag": "v0.3.1",
+        "commit": "3d9a9c94793b20e1ee7c807931cb536010d6f820"
       }
     }
   }
